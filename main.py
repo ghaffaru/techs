@@ -10,13 +10,6 @@ app = create_app()
 celery = app.celery_app
 
 
-# def get_db():
-#     try:
-#         db = SessionLocal()
-#         yield db
-#     finally:
-#         db.close()
-
 @celery.task
 def import_dataset():
     if not exists('data.csv'):
