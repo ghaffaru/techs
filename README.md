@@ -4,7 +4,7 @@
 Use [docker](https://www.docker.com/) to set it up
 
 ```
-docker-compose up --build
+docker-compose build
 ```
 
 ## Migrate
@@ -13,6 +13,10 @@ docker-compose up --build
 docker-compose run web alembic upgrade head
 ```
 
+# Boot up 
+```
+docker-compose up
+```
 ## Use the url to hit the endpoints
 ```
 http://localhost:8010
